@@ -1,0 +1,11 @@
+[Unit]
+Description=this is a weather service created by Igor Chubin
+
+[Service]
+Type=simple
+ExecStart=/home/vagrant/documents/Labs/lab_11/wthr_srvc
+WorkingDirectory=/home/vagrant/documents/Labs/lab_11
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
